@@ -9,8 +9,11 @@ export default function Home() {
       <main className="w-full max-w-4xl bg-slate-200 dark:bg-zinc-900 rounded-2xl shadow-xl p-8 md:p-16">
         <div className="flex flex-col items-center text-center gap-8">
           <h1 className="text-2xl md:text-2xl font-extrabold text-orange-500 dark:text-zinc-100">
-            Cosme Teixeira Silva
+            Prof. Cosme Teixeira Silva
           </h1>
+          <h2 className="text-xl md:text-2xl font-bold text-zinc-700 dark:text-zinc-300">
+            SENAC - MG
+          </h2>
 
           <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl text-justify">
             Aula prática de geração de documentos PDF utilizando React, CSS, TailWind e Next.js.
