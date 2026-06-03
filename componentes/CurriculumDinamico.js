@@ -219,7 +219,7 @@ export default function CurriculoDinamico({ dados }) {
           </Text>
 
           <Text style={styles.description}>
-            Bacharelado em Sistemas de Informação
+            Bacharelado em Engenharia de Sistemas e Automação - Universidade Federal de Lavras (UFLA)
           </Text>
 
           <Text style={styles.description}>
@@ -240,6 +240,13 @@ export default function CurriculoDinamico({ dados }) {
 
           <Text style={styles.description}>
             • Aplicações Full Stack com Next.js e Prisma
+          </Text>
+            <Text style={styles.sectionTitle}>
+            Habilidades Adicionais
+          </Text>
+
+            <Text style={styles.description}>
+            {dados.habilidades}
           </Text>
 
         </View>

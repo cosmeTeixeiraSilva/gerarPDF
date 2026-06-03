@@ -1,4 +1,4 @@
-import Botao_formulario from "../../componentes/Botao_formulario";
+import Formulario from "../../componentes/Formulario";
 export default function Home() {
   return (
     <div className="min-h-screen flex items-start justify-center bg-zinc-100 dark:bg-zinc-950 px-4">
@@ -9,7 +9,7 @@ export default function Home() {
           </h1>
 
         </div>
-      <Botao_formulario />
+      <Formulario />
       </main>
     </div>
   );
