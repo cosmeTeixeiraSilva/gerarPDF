@@ -12,7 +12,7 @@ export default function Home() {
             Cosme Teixeira Silva
           </h1>
 
-          <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl">
+          <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl text-justify">
             Aula prática de geração de documentos PDF utilizando React, CSS, TailWind e Next.js.
             Neste projeto, criamos um formulário para coletar informações do usuário e gerar um currículo personalizado em PDF,
             explorando conceitos modernos de componentes, estilização e
