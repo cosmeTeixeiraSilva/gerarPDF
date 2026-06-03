@@ -242,13 +242,15 @@ export default function CurriculoDinamico({ dados }) {
             • Aplicações Full Stack com Next.js e Prisma
           </Text>
             <Text style={styles.sectionTitle}>
-            Habilidades Adicionais
+            Redes
+          </Text>
+            <Text style={styles.description}>
+            {dados.gitHub}
           </Text>
 
             <Text style={styles.description}>
-            {dados.habilidades}
+            {dados.linkedin}
           </Text>
-
         </View>
 
       </Page>
