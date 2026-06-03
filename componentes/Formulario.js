@@ -15,6 +15,8 @@ export default function Formulario() {
   const [cargo, setCargo] = useState("");
   const [email, setEmail] = useState("");
   const [habilidades, setHabilidades] = useState("");
+  const [gitHub, setGitHub] = useState("");
+  const [linkedin, setLinkedin] = useState("");
 
   // AQUI você junta os campos num objeto (o "JSON" que vai pro currículo)
   const dados = {
@@ -22,6 +24,8 @@ export default function Formulario() {
     cargo,
     email,
     habilidades,
+    gitHub,
+    linkedin,
   };
 
   return (
@@ -36,9 +40,16 @@ export default function Formulario() {
         <input className="border border-gray-300 rounded-md p-2"
           value={email} placeholder="Email"
           onChange={(e) => setEmail(e.target.value)} />
+           <input className="border border-gray-300 rounded-md p-2"
+          value={gitHub} placeholder="GitHub"
+          onChange={(e) => setGitHub(e.target.value)} />
+        <input className="border border-gray-300 rounded-md p-2"
+          value={linkedin} placeholder="LinkedIn"
+          onChange={(e) => setLinkedin(e.target.value)} />
         <textarea type="text" className="border border-gray-300 rounded-md p-2"
-          value={habilidades} placeholder="Habilidades"
+          value={habilidades} placeholder="Descrição das habilidades e experiências"
           onChange={(e) => setHabilidades(e.target.value)} />
+
       </form>
 
       {/* passa o objeto dados para  o PDF */}
