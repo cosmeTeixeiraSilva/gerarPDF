@@ -1,6 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 import { useState } from "react";
+import CurriculumDinamico from "./CurriculumDinamico";
 const PDFDownloadLink = dynamic(
   () => import("@react-pdf/renderer").then((m) => m.PDFDownloadLink),
   { ssr: false }
@@ -33,13 +34,14 @@ export default function Formulario() {
         <input className="border border-gray-300 rounded-md p-2"
           value={email} placeholder="Email"
           onChange={(e) => setEmail(e.target.value)} />
-           <input className="border border-gray-300 rounded-md p-2"
+        <input className="border border-gray-300 rounded-md p-2"
           value={celular} placeholder="Celular"
           onChange={(e) => setCelular(e.target.value)} />
       </form>
 
       {/* passa o objeto dados pro modelo */}
-      <PDFDownloadLink document={<curriculumdinamico dados={dados} />} fileName="curriculo.pdf">
+      <PDFDownloadLink document={<CurriculumDinamico dados={dados} />} fileName="curriculo.pdf"
+        className="bg-blue-500 text-white py-2 px-4 rounded-md text-center hover:bg-blue-600 transition-colors">
         {({ loading }) => (loading ? "Gerando..." : "Baixar currículo")}
       </PDFDownloadLink>
     </div>
