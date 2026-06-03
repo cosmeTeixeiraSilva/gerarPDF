@@ -251,6 +251,13 @@ export default function CurriculoDinamico({ dados }) {
             <Text style={styles.description}>
             {dados.linkedin}
           </Text>
+           <Text style={styles.sectionTitle}>
+            Descrição das Habilidades e Experiências
+          </Text>
+           <Text style={styles.description}>
+            {dados.habilidades}
+          </Text>
+
         </View>
 
       </Page>
