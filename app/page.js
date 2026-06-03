@@ -1,8 +1,8 @@
+import Link from "next/link";
 import Botao1 from "../componentes/Botao1";
 import BotaoC1 from "../componentes/BotaoC1";
 import BotaoC2 from "../componentes/BotaoC2";
 import BotaoC3 from "../componentes/BotaoC3";
-
 export default function Home() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-zinc-100 dark:bg-zinc-950 px-4">
@@ -23,6 +23,9 @@ export default function Home() {
             <BotaoC1 />
             <BotaoC2 />
             <BotaoC3 />
+            <Link href="/gerarpdf" className="bg-red-500 text-white py-2 px-4 rounded-md text-center hover:bg-red-600 transition-colors">
+              Gerar Currículo
+            </Link>
 
           </div>
         </div>

@@ -112,7 +112,7 @@ export default function CurriculoDinamico({ dados }) {
           </Text>
 
           <Text style={styles.role}>
-            Desenvolvedor Full Stack | Professor de Tecnologia
+            {dados.cargo}
           </Text>
 
           <Text style={styles.sectionTitleSidebar}>
