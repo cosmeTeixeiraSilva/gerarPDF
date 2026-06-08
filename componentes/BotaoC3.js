@@ -19,7 +19,7 @@ export default function BotaoC3() {
         inline-flex
         items-center
         justify-center
-        px-4
+        px-2
         py-2
         rounded-lg
         bg-yellow-600
