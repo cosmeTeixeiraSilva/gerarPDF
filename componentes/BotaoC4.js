@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import CurriculoModerno from "./curriculum1";
+import PDFelementos from "./PDFelementos";
 const PDFDownloadLink = dynamic(
   () =>
     import("@react-pdf/renderer").then(
@@ -13,8 +13,8 @@ const PDFDownloadLink = dynamic(
 export default function BotaoC4() {
   return (
     <PDFDownloadLink
-      document={<CurriculoModerno />}
-      fileName="modelo.pdf"
+      document={<PDFelementos />}
+      fileName="elementos.pdf"
       className="
         inline-flex
         items-center

@@ -28,10 +28,11 @@ export default function Home() {
             <BotaoC1 />
             <BotaoC2 />
             <BotaoC3 />
-                  <BotaoC4 />
+
             <Link href="/gerarpdf" className="bg-red-500 text-white py-2 px-4 rounded-md text-center hover:bg-red-600 transition-colors">
               Gerar Currículo
             </Link>
+            <BotaoC4 />
 
           </div>
         </div>
