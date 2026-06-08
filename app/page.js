@@ -7,7 +7,7 @@ import BotaoC4 from "../componentes/BotaoC4";
 export default function Home() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-zinc-100 dark:bg-zinc-950 px-4">
-      <main className="w-full max-w-4xl bg-slate-200 dark:bg-zinc-900 rounded-2xl shadow-xl p-8 md:p-16">
+      <main className="w-full max-w-5xl bg-slate-200 dark:bg-zinc-900 rounded-2xl shadow-xl p-8 md:p-16">
         <div className="flex flex-col items-center text-center gap-8">
           <h1 className="text-2xl md:text-2xl font-extrabold text-orange-500 dark:text-zinc-100">
             Prof. Cosme Teixeira Silva
